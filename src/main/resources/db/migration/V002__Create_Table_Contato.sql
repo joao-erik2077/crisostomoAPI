@@ -1,7 +1,10 @@
 CREATE TABLE IF NOT EXISTS Contato (
     id BIGINT NOT NULL AUTO_INCREMENT,
-    cliente BIGINT NOT NULL,
+    clienteId BIGINT NOT NULL,
     descricao VARCHAR(255) NOT NULL,
     contato VARCHAR(100) NOT NULL,
     PRIMARY KEY(ID)
 );
+
+ALTER TABLE Contato ADD CONSTRAINT fk_contato_cliente
+FOREIGN KEY(clienteId) REFERENCES Cliente(id);
