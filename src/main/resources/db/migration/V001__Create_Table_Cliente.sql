@@ -3,3 +3,10 @@ CREATE TABLE IF NOT EXISTS Cliente (
     nome VARCHAR(255) NOT NULL,
     PRIMARY KEY(id)
 );
+
+INSERT INTO Cliente(nome) VALUES
+    ("Luthérik Rógers"),
+    ("Lucas Arthur da Silva"),
+    ("Arthur Lucas da Silva"),
+    ("Lucathur Crisostomo da Silva Gibão"),
+    ("Gibaltrar Lichestein Pereira");
